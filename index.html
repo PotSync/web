@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PotSync - Innovación Verde</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <header>
+        <img id="logo" src="img/potsync.png">
+        <h1>PotSync</h1>
+        <h5>Innovación verde, conectividad inteligente</h5>
+    </header>
+
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="catalogo.html">Catálogo</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="equipo.html">Equipo</a>
+        <a href="contacto.html">Contacto</a>
+        <form method="get" style="display: inline;">
+            <input id="buscar" type="text" name="search" placeholder="Buscar...">
+            <br>
+            <input id="btnB" type="submit" value="Buscar">
+        </form>
+    </nav>
+
+    <main>
+        <h2>Sobre PotSync</h2>
+        <p>PotSync es una empresa dedicada a la creación de soluciones ecológicas inteligentes, como macetas conectadas, sistemas de riego automatizados y accesorios IoT para el hogar. Nuestro objetivo es fusionar tecnología y ecología para mejorar la calidad de vida y promover un futuro sostenible.</p>
+
+        <section id="catalogo">
+            <h3>Catálogo de Productos</h3>
+            <img src="img/p1.png" alt="Maceta inteligente">
+            <img src="img/p2.png" alt="Sistema de riego automatizado">
+            <img src="img/p3.png" alt="Sensor IoT para hogar">
+            <br>
+            <a href="catalogo.html">
+                <button id="btnp">Ver más productos...</button>
+            </a>
+        </section>
+
+        <fieldset>
+            <legend><b><i>¡Contáctanos!</i><b/></legend>
+            <p>¿Tienes alguna pregunta o sugerencia? Estamos aquí para ayudarte.</p>
+            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre">
+            <br>
+            <input type="email" id="correo" name="correo" placeholder="Correo electrónico">
+            <br>
+            <input type="tel" id="tlf" name="tlf" placeholder="Número de teléfono">
+            <br>
+            <select name="asunto">
+                <option>Comentario</option>
+                <option>Sugerencia</option>
+                <option>Reclamo</option>
+                <option>Más información</option>
+            </select>
+            <br>
+            <textarea name="mensaje" rows="4" cols="50" placeholder="Escribe tu mensaje aquí..."></textarea>
+            <br>
+            <input id="formulario" type="submit" value="Enviar">
+        </fieldset>
+
+        <div style="text-align: center;">
+            <a href="">
+                <img src="img/wasap.png" alt="WhatsApp" width="50">
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=61567088566601">
+                <img src="img/feis.png" alt="Facebook" width="50">
+            </a>
+            <a href="https://www.tiktok.com/@potsync?is_from_webapp=1&sender_device=pc">
+                <img src="img/tkt.png" alt="Twitter" width="50">
+            </a>
+        </div>
+    </main>
+
+    <footer>
+        © 2024 PotSync. Todos los derechos reservados.
+    </footer>
+
+</body>
+</html>
