@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Catálogo - PotSync</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f2f2f2;
+    }
+
+    header {
+      background-color: #4caf50;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    h1 {
+      margin: 0;
+    }
+
+    .catalogo-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 1.5rem;
+      padding: 2rem;
+    }
+
+    .producto {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.2s;
+    }
+
+    .producto:hover {
+      transform: scale(1.02);
+    }
+
+    .producto img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .producto-info {
+      padding: 1rem;
+    }
+
+    .producto-info h3 {
+      margin: 0.5rem 0;
+    }
+
+    .producto-info p {
+      font-size: 0.9rem;
+      color: #555;
+    }
+
+    .producto-info .precio {
+      font-weight: bold;
+      color: #4caf50;
+      margin-top: 0.5rem;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Catálogo de Productos - PotSync</h1>
+    <p>Innovación verde, conectividad inteligente</p>
+  </header>
+
+  <main class="catalogo-container">
+    <!-- Producto 1 -->
+    <div class="producto">
+      <img src="img/p1.png" alt="Maceta inteligente 1">
+      <div class="producto-info">
+        <h3>Maceta Inteligente EcoSync</h3>
+        <p>Controla humedad, luz y temperatura desde tu móvil.</p>
+        <p class="precio">$699 MXN</p>
+      </div>
+    </div>
+
+    <!-- Producto 2 -->
+    <div class="producto">
+      <img src="img/p2.png" alt="Sistema de riego">
+      <div class="producto-info">
+        <h3>Sistema de Riego Automático</h3>
+        <p>Riego inteligente programado para interiores y exteriores.</p>
+        <p class="precio">$899 MXN</p>
+      </div>
+    </div>
+
+    <!-- Producto 3 -->
+    <div class="producto">
+      <img src="img/p3.png" alt="Sensor IoT">
+      <div class="producto-info">
+        <h3>Sensor Ambiental IoT</h3>
+        <p>Mide luz, humedad y temperatura en tiempo real.</p>
+        <p class="precio">$499 MXN</p>
+      </div>
+    </div>
+
+    <!-- Producto 4 -->
+    <div class="producto">
+      <img src="img/p4.png" alt="Maceta diseño básico">
+      <div class="producto-info">
+        <h3>Maceta Clásica PotSync</h3>
+        <p>Maceta decorativa sin electrónica, ideal para interiores.</p>
+        <p class="precio">$199 MXN</p>
+      </div>
+    </div>
+
+    <!-- Producto 5 -->
+    <div class="producto">
+      <img src="img/p5.png" alt="Maceta interior">
+      <div class="producto-info">
+        <h3>Maceta Moderna Minimalista</h3>
+        <p>Estilo limpio y elegante para hogares modernos.</p>
+        <p class="precio">$249 MXN</p>
+      </div>
+    </div>
+
+    <!-- Producto 6 -->
+    <div class="producto">
+      <img src="img/p6.png" alt="Kit de jardinería">
+      <div class="producto-info">
+        <h3>Kit Básico de Jardinería</h3>
+        <p>Incluye palita, guantes y maceta de muestra.</p>
+        <p class="precio">$349 MXN</p>
+      </div>
+    </div>
+
+    <!-- Producto 7 -->
+    <div class="producto">
+      <img src="img/p7.png" alt="Controlador WiFi">
+      <div class="producto-info">
+        <h3>Controlador WiFi para Plantas</h3>
+        <p>Conéctalo con tus sensores y activa funciones desde tu celular.</p>
+        <p class="precio">$599 MXN</p>
+      </div>
+    </div>
+
+    <!-- Producto 8 -->
+    <div class="producto">
+      <img src="img/p8.png" alt="Maceta de exterior">
+      <div class="producto-info">
+        <h3>Maceta Exterior Resistente</h3>
+        <p>Perfecta para jardines, hecha de materiales reciclados.</p>
+        <p class="precio">$289 MXN</p>
+      </div>
+    </div>
+
+    <!-- Producto 9 -->
+    <div class="producto">
+      <img src="img/p9.png" alt="Aspersor inteligente">
+      <div class="producto-info">
+        <h3>Aspersor Inteligente</h3>
+        <p>Controla el riego de tu jardín automáticamente según clima.</p>
+        <p class="precio">$799 MXN</p>
+      </div>
+    </div>
+
+    <!-- Producto 10 -->
+    <div class="producto">
+      <img src="img/p10.png" alt="Mini invernadero">
+      <div class="producto-info">
+        <h3>Mini Invernadero IoT</h3>
+        <p>Ideal para cultivo de hierbas y hortalizas inteligentes.</p>
+        <p class="precio">$1299 MXN</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    © 2024 PotSync. Todos los derechos reservados.
+  </footer>
+</body>
+
+</html>
