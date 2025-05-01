@@ -1,1 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Maceta Clásica - PotSync</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <a href="index.html"><img id="logo" src="img/potsync.png"></a>
+        <h1>PotSync</h1>
+        <h5>Innovación verde, conectividad inteligente</h5>
+    </header>
 
+    <main style="text-align: center;">
+        <h2>Maceta Clásica PotSync</h2>
+        <img src="img/p4.png" alt="Maceta Clasica" style="width:300px;">
+        <p><strong>Precio:</strong> $199 MXN</p>
+        <p><strong>Descripción:</strong> Diseño estético, sin componentes electrónicos.</p>
+        <label for="cantidad1">Cantidad:</label>
+        <input type="number" id="cantidad1" name="cantidad" min="1" value="1">
+        <br><br>
+        <button onclick="agregarAlCarrito('Maceta Clasica', 199, 'cantidad1')">Agregar al carrito</button>
+    </main>
+
+    <footer>© 2024 PotSync. Todos los derechos reservados.</footer>
+
+    <script>
+        function agregarAlCarrito(nombre, precio, inputId) {
+            const cantidad = document.getElementById(inputId).value;
+            alert(`Agregaste ${cantidad} unidad(es) de "${nombre}" al carrito por $${precio * cantidad} MXN.`);
+        }
+    </script>
+</body>
+</html>
